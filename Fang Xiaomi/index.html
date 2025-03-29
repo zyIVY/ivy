@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米商城</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 主导航 -->
+    <nav class="main-nav">
+        <div class="container">
+            <a class="logo" href="#">
+                <img src="assets/icons/R-C .jpg" alt="小米logo">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#" class="active">首页</a></li>
+                <li><a href="#">手机</a></li>
+                <li><a href="#">电视</a></li>
+                <li><a href="#">家电</a></li>
+                <li><a href="#">智能家居</a></li>
+            </ul>
+            <div class="search-box">
+                <input type="text" placeholder="搜索商品">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 商品分类展示区块 -->
+    <section class="category-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-fire"></i> 热门推荐</h2>
+                <a href="#" class="more-link">查看更多 <i class="fas fa-angle-right"></i></a>
+            </div>
+            <div class="product-grid">
+                <!-- 商品卡片（重复多个） -->
+                <div class="product-card">
+                    <div class="badge">新品</div>
+                    <img src="assets/images/t01d2abd2db558d83aa.png" alt="商品">
+                    <div class="product-info">
+                        <h3>Xiaomi 13 Ultra</h3>
+                        <p class="desc">徕卡光学｜1英寸可变光圈</p>
+                        <div class="price-box">
+                            <span class="price">￥4999</span>
+                            <span class="original-price">￥6999</span>
+                        </div>
+                        <div class="action-buttons">
+                            <button class="quick-buy">立即购买</button>
+                            <button class="add-cart"><i class="fas fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="badge">新品</div>
+                    <img src="assets/images/屏幕截图 2025-03-29 175202.png" alt="商品">
+                    <div class="product-info">
+                        <h3>Xiaomi 12S Ultra</h3>
+                        <p class="desc">徕卡光学镜头，2K超高清屏</p>
+                        <div class="price-box">
+                            <span class="price">￥5999</span>
+                            <span class="original-price">￥6999</span>
+                        </div>
+                        <div class="action-buttons">
+                            <button class="quick-buy">立即购买</button>
+                            <button class="add-cart"><i class="fas fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 更多卡片... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 横向滚动专区 -->
+    <section class="scroll-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-bolt"></i> 限时秒杀</h2>
+                <div class="countdown">剩余 02:15:33</div>
+            </div>
+            <div class="scroll-wrapper">
+                <div class="scroll-products">
+                    <!-- 横向排列的商品卡片 -->
+                    <div class="scroll-card">
+                        <img src="assets/images/R-B.jpg" alt="电视">
+                        <div class="price-tag">￥2999 <span class="tag">直降500</span></div>
+                    </div>
+                    <!-- 更多横向卡片... -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
