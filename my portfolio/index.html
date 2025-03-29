@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IVY's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="logo">IVY's Portfolio</div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">首页</a></li>
+            <li><a href="#projects">项目</a></li>
+            <li><a href="#contact">联系</a></li>
+        </ul>
+    </nav>
+
+    <!-- 首页简介 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm IVY</h1>
+            <p>learning web development and enjoying life</p>
+            <div class="skills">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+        </div>
+        <img src="./assets/images/屏幕截图 2025-03-29 131742.png" alt="头像" class="hero-avatar">
+    </section>
+
+    <!-- 项目展示 -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <!-- 项目卡片1 -->
+            <div class="project-card">
+                <h3>IVY's Blog</h3>
+                <p>A static blog built with HTML and CSS</p>
+                <img src="./assets/images/屏幕截图 2025-03-29 160529.png" alt="项目1">
+                <img src="./assets/images/屏幕截图 2025-03-29 160536.png" alt="项目1">
+                <img src="./assets/images/屏幕截图 2025-03-29 160541.png" alt="项目1">
+                </div>
+              <!-- 项目卡片2 -->
+            <div class="project-card">
+                <h3>Mindbox</h3>
+                <p>Some learning notes about web development in Mindbox</p>
+                <div class="image-container">
+                <img src="./assets/images/屏幕截图 2025-03-29 153452.png" alt="项目2">
+                <img src="./assets/images/屏幕截图 2025-03-29 153505.png" alt="项目2">
+                <img src="./assets/images/屏幕截图 2025-03-29 153528.png" alt="项目2">
+                <img src="./assets/images/屏幕截图 2025-03-29 153613.png" alt="项目2">
+                </div>
+            </div>
+            <!-- 更多项目卡片... -->
+        </div>
+    </section>
+
+    <!-- 联系表单 -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea rows="5" placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</body>
+</html>
