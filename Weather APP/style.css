@@ -1,0 +1,117 @@
+/* 基础样式 */
+:root {
+  --primary: #1a73e8;
+  --error: #dc3545;
+  --bg: #f8f9fa;
+  --transition: all 0.3s ease;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  color: #2c3e50;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+  backdrop-filter: blur(10px);
+}
+
+/* 搜索框样式 */
+.search-box {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#city-input {
+  flex: 1;
+  padding: 0.8rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+#city-input:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+#search-btn {
+  padding: 0.8rem 1.5rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+#search-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* 天气卡片样式 */
+.weather-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.weather-card img {
+  width: 80px;
+  height: 80px;
+  margin: -1rem 0;
+}
+
+/* 历史记录样式 */
+.history {
+  margin-top: 1.5rem;
+}
+
+#history-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+#history-list li {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+#history-list li:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* 错误提示 */
+.error {
+  color: var(--error);
+  padding: 1rem;
+  text-align: center;
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}

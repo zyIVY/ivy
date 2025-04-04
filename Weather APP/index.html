@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>智能天气助手</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- 搜索区域 -->
+    <div class="search-box">
+      <input type="text" 
+             placeholder="输入城市名称" 
+             id="city-input"
+             autocomplete="off">
+      <button id="search-btn">🔍 搜索</button>
+    </div>
+
+    <!-- 天气信息展示 -->
+    <div class="weather-card" id="weather-info"></div>
+
+    <!-- 搜索历史 -->
+    <div class="history">
+      <h3>最近搜索</h3>
+      <ul id="history-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
